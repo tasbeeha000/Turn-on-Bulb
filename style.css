@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    overflow-y: hidden;
+  }
+  .bulb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  #myElement {
+    width: 190px;
+  }
+  button {
+    margin: 30px 0;
+    background-color: transparent;
+    border: 2px solid yellow;
+    padding: 14px 14px;
+    border-radius: 35px;
+    cursor: pointer;
+    color: yellow;
+    font-family: cursive;
+    box-shadow: 2px 2px 19px 8px rgba(213, 187, 187, 0.3);
+  }
+  button:hover {
+    margin: 30px 0;
+    background-color: yellow;
+    border: none;
+    padding: 14px 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+  }
+  button:active {
+    box-shadow: none;
+  }
+
+  #textElement {
+    color: yellow;
+    font-family: cursive;
+    font-size: 30px;
+    font-family: cursive;
+    color: yellow;
+    z-index: 100;
+    text-align: center;
+    animation: glow 1.7s ease-in-out infinite;
+    margin-bottom: 10px;
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      text-shadow: 0 0 190px #cebb6c, 0 0 300px #e1be32, 0 0 30px #ffcc00;
+    }
+    50% {
+      text-shadow: 0 0 100px #ffcc00, 0 0 200px #ffcc00, 0 0 30px #ffcc00,
+        0 0 40px #ffcc00;
+    }
+  }
+
+  .display-none {
+    visibility: hidden;
+  }
+  .display-show {
+    visibility: visible;
+  }
+  .img-div {
+    margin-top: 20px;
+  }
+  @media (max-width: 330px) {
+    .img-div {
+      margin-top: 10px;
+    }
+    .bulb {
+      margin: 10px 0;
+    }
+    #textElement {
+      font-size: 20px;
+
+      margin-bottom: 7px;
+    }
+    #myElement {
+      width: 140px;
+    }
+  }
